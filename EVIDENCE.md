@@ -86,3 +86,19 @@ final readback, exact BigInt comparisons).
 - No MAJORITY_DISAGREE retries were needed in this run: every consensus call agreed on the first attempt.
 - Negative transactions send 0 GEN (a failed payable keeps its value in the contract on Studionet), so no value was stranded by any negative test.
 - The v1.0 contract (`0x12Eb45B757119f832BEC89a032aB819A3AF25493`) was abandoned before submission: its `distribute()` checked the phase before the distributed flag, making `ALREADY_DISTRIBUTED` unreachable. v1.1 checks the distributed flag first. The v1.0 evidence (36 txs) is archived under `evidence/v1/`.
+
+## Browser verification transactions (independent, not part of the 42)
+
+Two additional bind attempts were run live in the browser against the same
+contract after the evidence run, using a temporary test account
+(`0x12b9ec86c973d11b1326238ec682ca32d301085c`) and a secret gist under
+`chuanqili77` (`bf20eccbe4c3d1c00572c080603d295a`). Both failed on-chain with
+`NOT_ESTABLISHED` (account created Oct 2026, under the 1-year rule) and
+changed no state — donor count stayed 2, phase stayed DISTRIBUTED, ledger
+unchanged. They prove the live browser write path and the live GitHub fetch
+in validator consensus.
+
+| # | tx | result |
+|---|----|--------|
+| B1 | [0x872c7a33f4c4ca6b025c21009573c5e400ce188a51820ccb75485a6eb961611f](https://explorer-studio.genlayer.com/tx/0x872c7a33f4c4ca6b025c21009573c5e400ce188a51820ccb75485a6eb961611f) | FINALIZED, NOT_ESTABLISHED |
+| B2 | [0x472d6d467bc9f9cb444572c91ffe00c84f0c5ab400f256a17564c9e0684a0aa2](https://explorer-studio.genlayer.com/tx/0x472d6d467bc9f9cb444572c91ffe00c84f0c5ab400f256a17564c9e0684a0aa2) | FINALIZED, NOT_ESTABLISHED |
