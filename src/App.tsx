@@ -139,7 +139,7 @@ export default function App() {
     setLoading(true);
     setLoadError('');
     try {
-      if (!deployment) await loadDeployment();
+      if (!deployment) setDeployment(await loadDeployment());
       const d = await readAll();
       setRound(d.round);
       setProjects(d.projects);
