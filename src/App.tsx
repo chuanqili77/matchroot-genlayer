@@ -199,7 +199,7 @@ export default function App() {
         savePendingTx(hash, label);
         const good = txGood(receipt);
         setTx({ hash, label, status: 'finalized', detail: good ? tr('tx.success') : tr('tx.failed'), receipt });
-        saveMyTx(hash, label);
+        saveMyTx(hash, label, good ? 'ok' : 'failed');
         setMyTxs(loadMyTxs());
         clearPendingTx(hash);
         await load();

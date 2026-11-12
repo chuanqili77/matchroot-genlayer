@@ -123,13 +123,13 @@ export function clearPendingTx(hash: string) {
 // ---- My transaction history: append-only, this browser tab only ----
 export interface MyTx { hash: string; label: string; savedAt: string; result: string }
 const MY_TXS_KEY = 'matchroot-my-txs';
-export function saveMyTx(hash: string, label: string) {
+export function saveMyTx(hash: string, label: string, result: string = 'ok') {
   try {
     const list: MyTx[] = JSON.parse(localStorage.getItem(MY_TXS_KEY) || '[]');
     const at = new Date().toISOString();
     const i = list.findIndex((p) => p.hash === hash);
-    if (i >= 0) list[i] = { hash, label, savedAt: list[i].savedAt || at, result: list[i].result || 'ok' };
-    else list.push({ hash, label, savedAt: at, result: 'ok' });
+    if (i >= 0) list[i] = { hash, label, savedAt: list[i].savedAt || at, result: list[i].result || result };
+    else list.push({ hash, label, savedAt: at, result });
     localStorage.setItem(MY_TXS_KEY, JSON.stringify(list.slice(-200)));
   } catch { /* storage unavailable: hash is still shown on screen */ }
 }
