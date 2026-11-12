@@ -1,0 +1,27 @@
+{
+  "network": "Stable Studionet",
+  "chain_id": 61999,
+  "rpc": "https://studio.genlayer.com/api",
+  "contract_address": "0xeC1423fD916E4a0a8D568ae99509036a0De39c63",
+  "deploy_tx": "0x9e61a35c1ad384b0cf98108f7169463cc3cd3d758762f9aad31a11df6d577db8",
+  "explorer": "https://explorer-studio.genlayer.com/address/0xeC1423fD916E4a0a8D568ae99509036a0De39c63",
+  "source_sha256": "4af4487c5d4aa41810e141024a88cb8f0c5c150ec20f37393507eeee1229e16d",
+  "source_bytes": 30559,
+  "source_file": "contracts/matchroot.py",
+  "byte_parity": "BYTE_PARITY_MATCH: TRUE",
+  "wallets": {
+    "CREATOR": "0x9ed9cd1e1b8866fd26e17bdc9dc403f4014cb822",
+    "APPL": "0xad5704df012be106a6df1df9c4646a05304d768b",
+    "PCURL": "0xe42a5c28c795da69970fab065ab2ab9e33d52587",
+    "POSSL": "0xf9e3e8ed279e4235578074d6e54506d63c1de1af",
+    "PYQ": "0x345f22bf36c6a7d4bbdb591ee462238f46ed1888",
+    "PCPY": "0x7a7d6c8bdef5af2ddd78c309e61d4bc645508b55",
+    "D1": "0x2b23dc971cf410dd4007e0f6fb7c8dfeb6a000f7",
+    "D2": "0xcad9a671a37270d654215cb7e14ae63c3b928e9b",
+    "D3": "0xc0c023467f60c42bc8e4e8643505ea70bf8058bc",
+    "D4": "0x71ab687e4d9db7110319e13ad54e8acffa2971fb",
+    "D5": "0x3739f5ff886db67f2734333482495a409fab768b",
+    "OUT": "0x6c24ff6a6196f1af01f751e5a4ff0cd8b429417d"
+  },
+  "note": "Temp accounts generated for this evidence run only."
+}

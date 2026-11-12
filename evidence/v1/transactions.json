@@ -1,0 +1,215 @@
+{
+  "network": "Stable Studionet",
+  "chain_id": 61999,
+  "contract_address": "0x12Eb45B757119f832BEC89a032aB819A3AF25493",
+  "deploy_tx": "0x1ccfcb0c522105ca993377a6034b3322372c2f16fbc73f445d3dce94ae39cd0b",
+  "complete": false,
+  "transactions": [
+    {
+      "label": "round-create",
+      "hash": "0x0e3ae41aee2e878e54324febc2805aeac970a0db7ad2454f6543988840202b08",
+      "result": "ok"
+    },
+    {
+      "label": "app-curl",
+      "hash": "0xf6e18187128e5ddee044b5fb4ec85d1a1016d8b69b45fd3ea62b1f5fa105c26b",
+      "result": "ok"
+    },
+    {
+      "label": "app-openssl",
+      "hash": "0x72829246256ca4f76e0897d6839657ffaf6198e6b8020b6408ba037b64717046",
+      "result": "ok"
+    },
+    {
+      "label": "app-yq",
+      "hash": "0x776b4b5cd46bbd702e9ce2cbd3d0571f7824a408d82e456da64b907f4a79171d",
+      "result": "ok"
+    },
+    {
+      "label": "app-fake",
+      "hash": "0x5fa9bb7447219282a0557b2b939c6dce33c6b7b5ab1b2e4e613ea1f289dae675",
+      "result": "ok"
+    },
+    {
+      "label": "app-cpython",
+      "hash": "0x3592c184e9fd8b66ac9c762b6c219e48fd045ff631ea67944e5a36d902555cbf",
+      "result": "ok"
+    },
+    {
+      "label": "app-dup",
+      "hash": "0xb750d094eaed7b7161a15937482855f4f515274b3e3e13e865c40cdc4a04f71a",
+      "result": "error-observed",
+      "expected_error": "DUPLICATE_PROJECT"
+    },
+    {
+      "label": "judge-curl",
+      "hash": "0x9fad873b47119667110d6695736cf89cc9a236afab4a89d508c8428f665405e9",
+      "result": "ok"
+    },
+    {
+      "label": "judge-openssl",
+      "hash": "0xca10088c02c43bcc77f82eadecb9ec6767bdbc88b5e94eff80f9a36ef5238ba9",
+      "result": "ok"
+    },
+    {
+      "label": "judge-yq",
+      "hash": "0xcf83405ee2e24f4082d783b462a9ca36164f313de60a66977b410202cf50363d",
+      "result": "ok"
+    },
+    {
+      "label": "judge-fake",
+      "hash": "0xd83100fede65c668055bcdb4899316659b58d5770678706cfb549f145cc5940d",
+      "result": "ok"
+    },
+    {
+      "label": "judge-cpython",
+      "hash": "0x22a76a07714561969e6bf7669b29556621d9e84fb8198e0b1a794af5f9e3bcfd",
+      "result": "ok"
+    },
+    {
+      "label": "rejudge-cpython",
+      "hash": "0x965de5c243d80b148ac3e1363a0d5c9144e5ec38a954bd8799ea3a9834bf9b24",
+      "result": "ok"
+    },
+    {
+      "label": "bind-d1",
+      "hash": "0x681576a34d5781baffa3e58236abee4034637c8c8600205562a5ed15df5c8e60",
+      "result": "ok"
+    },
+    {
+      "label": "bind-d2",
+      "hash": "0xff84803eb9289a93a738dae15409a1ec1933abfa4f23085bae01551d475931e5",
+      "result": "ok"
+    },
+    {
+      "label": "bind-d3-zuotu",
+      "hash": "0x3f5dbf566bd4695687e87d5dc8b86156b2f756d08f8fd843f0ca766b9a1fb2ba",
+      "result": "error-observed",
+      "expected_error": "NOT_ESTABLISHED"
+    },
+    {
+      "label": "bind-wrong-challenge",
+      "hash": "0x96318253e963dc169104bf794edd87efceaa25dfd9900ec93ecf0aeb1f5c86d2",
+      "result": "error-observed",
+      "expected_error": "CHALLENGE_MISMATCH",
+      "unchanged_state": true
+    },
+    {
+      "label": "bind-gist-404",
+      "hash": "0xae14409ec38a41e378fd337f2526816f97995094de02e429fba1b7670f213e51",
+      "result": "error-observed",
+      "expected_error": "GIST_NOT_FOUND",
+      "unchanged_state": true
+    },
+    {
+      "label": "bind-owner-mismatch",
+      "hash": "0xf4934e49f75d08d05b0a10582ea7bba1f2c80eda175851864484033019edb1b4",
+      "result": "error-observed",
+      "expected_error": "GIST_OWNER_MISMATCH",
+      "unchanged_state": true
+    },
+    {
+      "label": "bind-duplicate-login",
+      "hash": "0x9c86e5888e217ffbe9eea86310c8114e9c97a9b3e3123502e3ffcced336e6479",
+      "result": "error-observed",
+      "expected_error": "DUPLICATE_BINDING",
+      "unchanged_state": true
+    },
+    {
+      "label": "bind-already-bound",
+      "hash": "0xe2e67458d656f5fc09bf56f87ab4a4a17de4562235daf2a583b3f1f046ba6004",
+      "result": "error-observed",
+      "expected_error": "ALREADY_BOUND",
+      "unchanged_state": true
+    },
+    {
+      "label": "open-funding",
+      "hash": "0xb17e92457aca1c292fe0b09bd233d3b40be3842d2dda8b46231573dd80921bc7",
+      "result": "ok"
+    },
+    {
+      "label": "neg-contribute-unbound",
+      "hash": "0xc03341c2b5e7943c75ef2e84ba20b9c646602108b43309ef03fc72ef9c398928",
+      "result": "error-observed",
+      "expected_error": "NOT_BOUND",
+      "unchanged_state": true
+    },
+    {
+      "label": "neg-contribute-ineligible",
+      "hash": "0xdd16645339c72f612fb6d5c58d12fde33ec9a095e6f6dda3f346e2392033cd75",
+      "result": "error-observed",
+      "expected_error": "PROJECT_NOT_ELIGIBLE",
+      "unchanged_state": true
+    },
+    {
+      "label": "neg-contribute-zero",
+      "hash": "0xb6d289e8ad6aa6ffb227c08e6d62534d16a3c8d65eb9d416ba40be371911b735",
+      "result": "error-observed",
+      "expected_error": "AMOUNT",
+      "unchanged_state": true
+    },
+    {
+      "label": "c1-d1-curl",
+      "hash": "0xdc0b30740ddf976e9f50a50e55eecbfd36f0994613b95f894ea068ba25c1737d",
+      "result": "ok"
+    },
+    {
+      "label": "c2-d1-openssl",
+      "hash": "0x0985359e1f5fa938c7e41c44a3469065609676fd52f265d81e7b86e00d4b93cd",
+      "result": "ok"
+    },
+    {
+      "label": "c3-d1-yq",
+      "hash": "0xdd221a0732eb9017c3000ffdb4a1955b413d6c6fd4a4df3f9b905b5d5f52fc93",
+      "result": "ok"
+    },
+    {
+      "label": "c4-d2-curl",
+      "hash": "0x18a00c0f6d8beac106b1389e39af1bf1402865df7830f83b0d0a8e1d94b9b0f7",
+      "result": "ok"
+    },
+    {
+      "label": "c5-d2-openssl",
+      "hash": "0x4aa416264b96d6c0df10f3748eb08341dc74401d7e1ed59c72e9fe2e49506706",
+      "result": "ok"
+    },
+    {
+      "label": "neg-distribute-early",
+      "hash": "0xd9b7f55ed734fac2fca81ba21d5404cc0ddc62c50a42fa9fddd2cf481b6ea469",
+      "result": "error-observed",
+      "expected_error": "ROUND_NOT_CLOSED",
+      "unchanged_state": true
+    },
+    {
+      "label": "neg-close-stranger",
+      "hash": "0x46ef64ed7859a69da1d61a7b283765c3ac575f11ecf57a4a70b8c33ed3f2f732",
+      "result": "error-observed",
+      "expected_error": "NOT_CREATOR",
+      "unchanged_state": true
+    },
+    {
+      "label": "neg-withdraw-early",
+      "hash": "0xed0153df4b2319fd5e7bfa38bc6af504f693146331e52d834c1345c173506e6b",
+      "result": "error-observed",
+      "expected_error": "NO_CREDIT",
+      "unchanged_state": true
+    },
+    {
+      "label": "close-round",
+      "hash": "0xc2bad1b0d8cdefc01b92d2285933bc9befa10b9e3dfbacbdaa3fc1d6c1eb0b8d",
+      "result": "ok"
+    },
+    {
+      "label": "neg-contribute-after-close",
+      "hash": "0xed799e34035cb9bdad042c0f2b59d4d70951712e06fc76bcbc29292550b6e17c",
+      "result": "error-observed",
+      "expected_error": "ROUND_NOT_FUNDING",
+      "unchanged_state": true
+    },
+    {
+      "label": "distribute",
+      "hash": "0xc942c8fddc39b7895c97857df272ecf38e06f0290b64be119b4176f9a28e415c",
+      "result": "ok"
+    }
+  ]
+}
